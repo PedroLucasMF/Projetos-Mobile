@@ -1,24 +1,26 @@
 import { StatusBar } from 'expo-status-bar';
 import { Button ,ScrollView, StyleSheet, Text, View } from 'react-native';
-import Card from './components/Card';
-import Butoes from './components/butoes';
+import { Pag3 } from './screens/Pag3';
+import { NavigationContainer } from '@react-navigation/native';
+
 
 
 export default function App() {
   return (
-    <ScrollView style={{ margin: 10 }}>
-      <Card titulo="BOBINHo" text="não tankei">
-        <text>paragrafo1</text>
-        <text>paragrafo2</text>
-        <text>paragrafo3</text>
-        <Button title='detalhes'/>
-      </Card>
-      <Card titulo="eu tenho medo" text="de andar no escuro"></Card>
-      <Card titulo="jose" text="joaoEstrela"></Card>
-      
-
+    <ScrollView style={{ margin: 10}}>
      
+     <NavigationContainer>
+      <Stack.Navigator>
+      <Stack.Screen
+      
+      
+      
+      />
 
+
+      </Stack.Navigator>
+     </NavigationContainer>
+      
     </ScrollView>
   );
 }
