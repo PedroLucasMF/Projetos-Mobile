@@ -1,11 +1,16 @@
 import React from 'react'
-import { Avatar, Button, Card, Text } from 'react-native-paper'
+import { Button } from 'react-native';
+import { Avatar, Card, Text } from 'react-native-paper'
 
-export const Pag3 = () => {
+export const Pag3 = ({navigation}) => {
   const LeftContent = (props) => <Avatar.Icon {...props} icon="alien" />;
   const alunos = ["pedro", "cleber", "joao"];
+
   return (
     <>
+
+    <Button title="Pagina2" onPress={()=>navigation.navigate('Pg2')}/>
+  
    <Card style={{marginBottom: 20}}>
         <Card.Title
           title="Pedro"
@@ -13,6 +18,7 @@ export const Pag3 = () => {
           left={LeftContent}
         />
       </Card>
+      <Button title="Pagina1" onPress={()=>navigation.navigate('Pg1')}/>
    <Card style={{marginBottom: 20}}>
         <Card.Title
           title="Cleber"
