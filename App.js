@@ -7,6 +7,7 @@ import { Pag2 } from './screens/Pag2';
 import Pag1 from './screens/Pag1';
 import Arrays from './screens/Arrays';
 import Objeto from './screens/Objeto';
+import Estado from './screens/Estado';
 
 
 
@@ -18,6 +19,7 @@ export default function App() {
      
      <NavigationContainer>
       <Stack.Navigator>
+      <Stack.Screen name="estado" component={Estado} options={{title: "Use State"}}/>  
       <Stack.Screen name="Obj" component={Objeto} options={{title: "Objeto"}}/>  
       <Stack.Screen name="Treco" component={Arrays} options={{title: "Array"}}/>  
       <Stack.Screen name="Profile" component={Pag3} options={{title: "Peixeiro"}}/>

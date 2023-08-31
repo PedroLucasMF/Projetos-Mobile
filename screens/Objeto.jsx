@@ -13,17 +13,7 @@ const Objeto = () => {
         {marca:'WE', modelo:'Fusca', ano:'1988', cor:'Preto'},
         {marca:'WE', modelo:'Celta', ano:'1988', cor:'Azul'},
         {marca:'RT', modelo:'Opala', ano:'1998', cor:'Vermelho'},
-    
-    'Chevete', 
-    'Gol',
-    'Fusca', 
-    'Celta', 
-    'Opala']
-
-    const carro1 = 'Chevete'
-    const carro2 = 'Gol'
-
-    const carro = {marca:'VW', modelo:'Chevete', ano:'1999', cor:'marrom'}
+    ]
 
   return (
     <>
